@@ -292,7 +292,7 @@ def encoding_sentence(english_sentence):
     result = ''
     for eng_char in cleaned_english_sentence:
         if eng_char == ' ':
-            if result[-1] != ' ':
+            if result[-2] != ' ':
                 result += ' '
         else:
             result += encoding_character(eng_char) + ' '
